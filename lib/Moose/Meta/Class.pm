@@ -794,6 +794,8 @@ __END__
 
 =pod
 
+=head1 SYNOPSIS
+
   # assuming that class Foo has been defined, you can ...
 
   # get all the methods in a class ...
