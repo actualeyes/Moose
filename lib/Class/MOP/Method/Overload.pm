@@ -59,18 +59,16 @@ implement overloading.
 
 =head1 METHODS
 
-=over 4
+This class provides the following methods:
 
-=item B<< Class::MOP::Method::Overload->wrap($metamethod, %options) >>
+=head2 Class::MOP::Method::Overload->wrap($metamethod, %options)
 
 This is the constructor. The options accepted are identical to the ones
 accepted by L<Class::MOP::Method>, except that it also required an C<operator>
 parameter, which should be an operator as defined by the L<overload> pragma.
 
-=item B<< $metamethod->operator >>
+=head2 $metamethod->operator
 
 This returns the operator that was passed to new.
-
-=back
 
 =cut

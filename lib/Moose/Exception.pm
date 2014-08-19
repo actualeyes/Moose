@@ -69,23 +69,21 @@ for use in user code.
 Of course if you're writing metaclass traits, it would then make sense to
 subclass the relevant Moose exceptions - but only then.
 
-=head1 ATTRIBUTES
+=head1 METHODS
 
-=over 4
+This class provides the following methods:
 
-=item B<< $exception->trace >>
+=head2 $exception->trace
 
-This attribute contains the stack trace for the given exception. It
-is read-only and isa L<Devel::StackTrace>. It is lazy & dependent
-on $exception->message.
+This attribute contains the stack trace for the given exception. It returns a
+L<Devel::StackTrace> object.
 
-=item B<< $exception->message >>
+=head2 $exception->message
 
-This attribute contains the exception message. It is read-only and isa Str.
-It is lazy and has a default value 'Error'. Every subclass of L<Moose::Exception>
-is expected to override _build_message method.
+This attribute contains the exception message.
 
-=back
+Every subclass of L<Moose::Exception> is expected to override
+C<_build_message> method in order to construct this value.
 
 =head1 SEE ALSO
 

@@ -235,16 +235,16 @@ role.
 
 C<Moose::Meta::Role::Composite> is a subclass of L<Moose::Meta::Role>.
 
-=head2 METHODS
+=head1 METHODS
 
-=over 4
+This class provides the following methods:
 
-=item B<< Moose::Meta::Role::Composite->new(%options) >>
+=head2 Moose::Meta::Role::Composite->new(%options)
 
 This returns a new composite role object. It accepts the same
 options as its parent class, with a few changes:
 
-=over 8
+=over 4
 
 =item * roles
 
@@ -266,8 +266,6 @@ attribute.
 
 Like C<< Class::MOP::Package->reinitialize >>, but doesn't allow passing a
 string with the package name, as there is no real package for composite roles.
-
-=back
 
 =back
 
